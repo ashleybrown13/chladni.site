@@ -1,5 +1,5 @@
 
-let bg
+// let bg
 let rain
 let wind
 let highway
@@ -18,7 +18,7 @@ let typing
 
 function setup() {
 
-	bg = loadImage('background.png');
+	// bg = loadImage('background.png');
 	createCanvas(800, 800)
 
 
@@ -40,7 +40,7 @@ function preload() {
 
 
 function draw() {
-	 image(bg, 2, -202)
+	 // image(bg, 2, -202)
 }
 
 

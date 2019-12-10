@@ -17,16 +17,50 @@
         td {
         	text-align: center;
         }
+        #main {    
+        	position: relative;    	
+        	width: 500px;
+        	margin: auto;
+        }
+        img {
+        	position: absolute;
+        	left: 0px;
+        	top: 0px;
+        	z-index: 0;
+        }
+        #content {
+        	position: absolute;
+        	left: 0px;
+        	top: 100px;
+        	width: 500px;
+        	z-index: 100;
+        }
+
+/*        div {
+        	position: absolute;
+        	left: 0px;
+        	height: 0px;
+        	z-index: 0;
+        }*/
+        a {
+        	color: white;
+        	font: 14px Arial;
+        }
+
     </style>
 </head>
 <body style="background-color:black;">
-	
+	<div id="main">
+			<img src="background.png" height="500" width="500">
+		<div id="content">
+
 	<br />
 	<font color="white"><h2 style="font-family:garamond;"><center><i>Visualization of Sounds</i></center></h2></font>
 
 	<font color="white"><h2 style="font-family:garamond;"><center><i>Ashley Brown</i></center></h2></font>
 
 	<br />
+
 	<center><table style="width:300px">
 	  <tr>
 	    <td><a href="javascript:playWind()">I</a></td>
@@ -53,6 +87,7 @@
 	     <td><a href="javascript:playCampus()">XVI</a></td>
 	  </tr>
 	</table></center>
-
+</div>
+</div>
 </body>
 </html>
