@@ -32,7 +32,7 @@ function preload() {
 	song = loadSound('LesDeuxPianos.mp3')
 	footsteps = loadSound('walking&keys.m4a')
 	dryer = loadSound('dryer.m4a')
-	dishWash = loadSound('DISHWASHER.mp3')
+	dishwash = loadSound('DISHWASHER.mp3')
 
 
 
@@ -52,7 +52,7 @@ function playWind() {
 	rain.stop()
 	song.stop()
 	dryer.stop()
-	dishWash.stop()
+	dishwash.stop()
 	footsteps.stop()
 
 }
@@ -65,7 +65,7 @@ function playRain() {
 	song.stop()
 	wind.stop()
 	dryer.stop()
-	dishWash.stop()
+	dishwash.stop()
 	footsteps.stop()
 
 }
@@ -78,7 +78,7 @@ function playFan() {
 	song.stop()
 	wind.stop()
 	dryer.stop()
-	dishWash.stop()
+	dishwash.stop()
 	footsteps.stop()
 
 }
@@ -91,7 +91,7 @@ function playCampus() {
 	song.stop()
 	wind.stop()
 	dryer.stop()
-	dishWash.stop()
+	dishwash.stop()
 	footsteps.stop()
 
 }
@@ -104,7 +104,7 @@ function playSong() {
 	rain.stop()
 	wind.stop()
 	dryer.stop()
-	dishWash.stop()
+	dishwash.stop()
 	footsteps.stop()
 
 }
@@ -118,7 +118,7 @@ function playFootsteps() {
 	rain.stop()
 	wind.stop()
 	dryer.stop()
-	dishWash.stop()
+	dishwash.stop()
 
 }
 
@@ -131,12 +131,12 @@ function playDryer() {
 	rain.stop()
 	wind.stop()
 	footsteps.stop()
-	dishWash.stop()
+	dishwash.stop()
 }
 
-function playDishWash() {
+function playDishwash() {
 	
-	dishWash.play()
+	dishwash.play()
 	song.stop()
 	fan.stop()
 	campus.stop()
