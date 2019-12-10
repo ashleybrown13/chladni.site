@@ -18,7 +18,7 @@ let fan
 let typing
 
 function setup() {
-	
+
 	bg = loadImage('car,bkgr.png');
 	createCanvas(700, 700)
 
@@ -40,30 +40,50 @@ function preload() {
 function playWind() {
 
 	wind.play()
+	fan.stop()
+	campus.stop()
+	rain.stop()
+	song.stop()
 
 }
 
 function playRain() {
 	
 	rain.play()
+	fan.stop()
+	campus.stop()
+	song.stop()
+	wind.stop()
 
 }
 
 function playFan() {
 	
 	fan.play()
+	campus.stop()
+	rain.stop()
+	song.stop()
+	wind.stop()
 
 }
 
 function playCampus() {
 	
 	campus.play()
+	fan.stop()
+	rain.stop()
+	song.stop()
+	wind.stop()
 
 }
 
 function playSong() {
 	
 	song.play()
+	fan.stop()
+	campus.stop()
+	rain.stop()
+	wind.stop()
 
 }
 
