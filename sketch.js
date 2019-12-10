@@ -18,8 +18,8 @@ let typing
 
 function setup() {
 
-	bg = loadImage('car,bkgr.png');
-	createCanvas(700, 700)
+	bg = loadImage('background.png');
+	createCanvas(800, 800)
 
 
 }
@@ -40,7 +40,7 @@ function preload() {
 
 
 function draw() {
-	 background(bg);
+	 image(bg, 2, -202)
 }
 
 
@@ -144,4 +144,10 @@ function playDishwash() {
 	wind.stop()
 	footsteps.stop()
 	dryer.stop()
+}
+
+
+function mouseClicked() {
+	print(int(mouseX), int(mouseY))
+
 }
