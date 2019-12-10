@@ -1,4 +1,5 @@
 
+let bg
 let rain
 let wind
 let highway
@@ -17,7 +18,8 @@ let fan
 let typing
 
 function setup() {
-
+	
+	bg = loadImage('car,bkgr.png');
 	createCanvas(700, 700)
 
 
