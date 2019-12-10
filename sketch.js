@@ -36,6 +36,10 @@ function preload() {
 }
 
 
+function draw() {
+	 background(bg);
+}
+
 
 function playWind() {
 
