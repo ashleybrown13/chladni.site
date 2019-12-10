@@ -9,10 +9,9 @@ let vacuum
 let footsteps
 let crowd
 let car_start
-let rats
 let song
 let dryer
-let washing_machine
+let dishWash
 let campus
 let fan
 let typing
@@ -31,6 +30,10 @@ function preload() {
 	campus = loadSound('campus_quiet.mp3')
 	rain = loadSound('rain.mp3')
 	song = loadSound('LesDeuxPianos.mp3')
+	footsteps = loadSound('walking&keys.m4a')
+	dryer = loadSound('dryer.m4a')
+	dishWash = loadSound('DISHWASHER.mp3')
+
 
 
 }
@@ -48,6 +51,9 @@ function playWind() {
 	campus.stop()
 	rain.stop()
 	song.stop()
+	dryer.stop()
+	dishWash.stop()
+	footsteps.stop()
 
 }
 
@@ -58,6 +64,9 @@ function playRain() {
 	campus.stop()
 	song.stop()
 	wind.stop()
+	dryer.stop()
+	dishWash.stop()
+	footsteps.stop()
 
 }
 
@@ -68,6 +77,9 @@ function playFan() {
 	rain.stop()
 	song.stop()
 	wind.stop()
+	dryer.stop()
+	dishWash.stop()
+	footsteps.stop()
 
 }
 
@@ -78,6 +90,9 @@ function playCampus() {
 	rain.stop()
 	song.stop()
 	wind.stop()
+	dryer.stop()
+	dishWash.stop()
+	footsteps.stop()
 
 }
 
@@ -88,6 +103,45 @@ function playSong() {
 	campus.stop()
 	rain.stop()
 	wind.stop()
+	dryer.stop()
+	dishWash.stop()
+	footsteps.stop()
 
 }
 
+function playFootsteps() {
+	
+	footsteps.play()
+	song.stop()
+	fan.stop()
+	campus.stop()
+	rain.stop()
+	wind.stop()
+	dryer.stop()
+	dishWash.stop()
+
+}
+
+function playDryer() {
+	
+	dryer.play()
+	song.stop()
+	fan.stop()
+	campus.stop()
+	rain.stop()
+	wind.stop()
+	footsteps.stop()
+	dishWash.stop()
+}
+
+function playDishWash() {
+	
+	dishWash.play()
+	song.stop()
+	fan.stop()
+	campus.stop()
+	rain.stop()
+	wind.stop()
+	footsteps.stop()
+	dryer.stop()
+}
