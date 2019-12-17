@@ -15,7 +15,6 @@ let dishWash
 let campus
 let fan
 let typing
-let boiling
 
 function setup() {
 
