@@ -2,19 +2,20 @@
 // let bg
 let rain
 let wind
-let highway
+let scissors
 let sink
-let boiling_water
+let boiling
 let vacuum
 let footsteps
-let crowd
-let car_start
-let song
+let starbucks
+let car
+let spray
 let dryer
 let dishWash
 let campus
 let fan
 let typing
+let boiling
 
 function setup() {
 
@@ -28,11 +29,19 @@ function preload() {
 	wind = loadSound('wind.mp3')
 	fan = loadSound('Fan.mp3')
 	campus = loadSound('campus_quiet.mp3')
+	starbucks = loadSound('Starbucks.m4a')
+	sink = loadSound('sink.m4a')
+	spray = loadSound('water spray.m4a')
+	boiling = ('Boiling.m4a')
 	rain = loadSound('rain.mp3')
-	song = loadSound('LesDeuxPianos.mp3')
-	footsteps = loadSound('walking&keys.m4a')
+	car = loadSound('starting the car.m4a')
 	dryer = loadSound('dryer.m4a')
 	dishwash = loadSound('DISHWASHER.mp3')
+	vacuum = loadSound('vacuum.m4a')
+	match = loadSound('match.m4a')
+	scissors = loadSound('scissors.m4a')
+	typing = loadSound('typing.m4a')
+	footsteps = loadSound('walking&keys.m4a')
 
 
 
@@ -50,23 +59,19 @@ function playWind() {
 	fan.stop()
 	campus.stop()
 	rain.stop()
-	song.stop()
+	car.stop()
 	dryer.stop()
 	dishwash.stop()
 	footsteps.stop()
-
-}
-
-function playRain() {
-	
-	rain.play()
-	fan.stop()
-	campus.stop()
-	song.stop()
-	wind.stop()
-	dryer.stop()
-	dishwash.stop()
-	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
 
 }
 
@@ -75,11 +80,20 @@ function playFan() {
 	fan.play()
 	campus.stop()
 	rain.stop()
-	song.stop()
+	car.stop()
 	wind.stop()
 	dryer.stop()
 	dishwash.stop()
 	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
 
 }
 
@@ -88,17 +102,136 @@ function playCampus() {
 	campus.play()
 	fan.stop()
 	rain.stop()
-	song.stop()
+	car.stop()
 	wind.stop()
 	dryer.stop()
 	dishwash.stop()
 	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
 
 }
 
-function playSong() {
+function playStarbucks() {
 	
-	song.play()
+	starbucks.play()
+	fan.stop()
+	campus.stop()
+	rain.stop()
+	car.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
+}
+
+function playSink() {
+	
+	sink.play()
+	rain.stop()
+	fan.stop()
+	campus.stop()
+	car.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+
+}
+
+function playSpray() {
+	
+	spray.play()
+	rain.stop()
+	fan.stop()
+	campus.stop()
+	car.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	sink.stop()
+
+}
+
+function playBoiling() {
+	
+	boiling.play()
+	rain.stop()
+	fan.stop()
+	campus.stop()
+	car.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	spray.stop()
+	sink.stop()
+
+}
+
+function playRain() {
+	
+	rain.play()
+	fan.stop()
+	campus.stop()
+	car.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
+}
+
+function playCar() {
+	
+	car.play()
 	fan.stop()
 	campus.stop()
 	rain.stop()
@@ -106,44 +239,169 @@ function playSong() {
 	dryer.stop()
 	dishwash.stop()
 	footsteps.stop()
-
-}
-
-function playFootsteps() {
-	
-	footsteps.play()
-	song.stop()
-	fan.stop()
-	campus.stop()
-	rain.stop()
-	wind.stop()
-	dryer.stop()
-	dishwash.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
 
 }
 
 function playDryer() {
 	
 	dryer.play()
-	song.stop()
+	rain.stop()
 	fan.stop()
 	campus.stop()
-	rain.stop()
+	song.stop()
 	wind.stop()
-	footsteps.stop()
 	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
 }
 
 function playDishwash() {
 	
 	dishwash.play()
+	rain.stop()
+	fan.stop()
+	campus.stop()
 	song.stop()
+	wind.stop()
+	dryer.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
+}
+
+function playVacuum() {
+	
+	vacuum.play()
+	rain.stop()
+	fan.stop()
+	campus.stop()
+	song.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
+}
+
+function playMatch() {
+	
+	match.play()
+	rain.stop()
+	fan.stop()
+	campus.stop()
+	song.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
+}
+
+function playScissors() {
+	
+	scissors.play()
+	rain.stop()
+	fan.stop()
+	campus.stop()
+	song.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	typing.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
+}
+
+function playTyping() {
+	
+	typing.play()
+	rain.stop()
+	fan.stop()
+	campus.stop()
+	song.stop()
+	wind.stop()
+	dryer.stop()
+	dishwash.stop()
+	footsteps.stop()
+	starbucks.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
+}
+
+function playFootsteps() {
+	
+	footsteps.play()
+	car.stop()
 	fan.stop()
 	campus.stop()
 	rain.stop()
 	wind.stop()
-	footsteps.stop()
 	dryer.stop()
+	dishwash.stop()
+	starbucks.stop()
+	typing.stop()
+	scissors.stop()
+	match.stop()
+	vacuum.stop()
+	car.stop()
+	boiling.stop()
+	spray.stop()
+	sink.stop()
+
 }
 
 
